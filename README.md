@@ -67,16 +67,11 @@ The playbook implements the following tasks:
 - edit the Ansible hosts yamal file to connect to server
 - Execute .yml file and deploy the stack
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
-![TODO: Update the path with the name of your screenshot of docker ps output](C/Users/TopBruv/Pictures/elkdiagram.png)??
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 104.42.10.35,13.64.101.127
 We have installed the following Beats on these machines:
 - _Filebeat and Metricbeat
-
 These Beats allow us to collect the following information from each machine:
 -Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. 
 -Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash.
@@ -89,7 +84,7 @@ SSH into the control node and follow the steps below:
 - Update the _yaml____ file to include IP address
 - Run the playbook, and navigate to _web browser___ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+
 - _Which file is the playbook? filebeat-playbook.yml 
 Where do you copy it?_ The vm's
 - _Which file do you update to make Ansible run the playbook on a specific machine?Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Elk server is a separate vm and Filebeat is on the jumpbox that has ansible in it.
