@@ -80,18 +80,16 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _yaml____ file to __vm's___.
+- Copy the _yaml____ file to virtual machines.
 - Update the _yaml____ file to include IP address
 - Run the playbook, and navigate to _web browser___ to check that the installation worked as expected.
 
 
-- _Which file is the playbook? filebeat-playbook.yml 
-Where do you copy it?_ The vm's
-- _Which file do you update to make Ansible run the playbook on a specific machine?Hosts file How do I specify which machine to install the ELK server on versus which to install Filebeat on?_Elk server is a separate vm and Filebeat is on the jumpbox that has ansible in it.
-- _Which URL do you navigate to in order to check that the ELK server is running?Your elk stack IP: with the port
+-  filebeat-playbook.yml is the file for the playbook.
+These files are then copied to the virual machines
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
-ansible-playbook elkinstall.yml, nano ansible-playbook, nano hosts,
+Elk server is a separate virtual machine and filebeat is on the jumpbox that has ansible running on it.
+- In order to check that the ELK server is running you need your elk stack IP with the port :5601
 
 ### Troubleshooting/Bugs Encountered
 Security rule edits for DVWA VM's, Kibana, etc.
